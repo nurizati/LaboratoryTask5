@@ -6,13 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Vacancy</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="stylesheet" href="jquery.mobile.structure-1.4.5.min.css">
-    <link rel="stylesheet" href="jquery.mobile.icons.min.css">
-    <link rel="stylesheet" href="LT5.css">
-    <link rel="stylesheet" href="LT5.min.css">
+    <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="lab5.css">
+    <link rel="stylesheet" href="lab5.min.css">
 
     <script src="jquery.min.js"></script>
     <script src="jquery.mobile-1.4.5.min.js"></script>
@@ -20,11 +16,10 @@
 </head>
 
 <body>
-    <div data-role="page" id="page1">
+    <div data-role="page" id="utama">
         <div data-role="header">
             <h1>JOB VACANCY</h1>
         </div>
-
         <div data-role="main" class="ui-content">
             <h3>Web Designer</h3>
             <ol data-role="listview">
@@ -34,25 +29,20 @@
                 <li>Salary: RM2K - RM4K</li>
             </ol>
         </div>
-
         <div data-role="footer">
-            <div align="right" data-role="controlgroup" data-type="vertical">
-                <a href="#page2" class="ui-btn ui-btn-inline ui-icon-action ui-btn-icon-right ui-mini">Apply</a>
+            <div align="left" data-role="controlgroup" data-type="vertical">
+                <a href="#page2" class="ui-btn ui-btn-inline ui-icon-action ui-btn-icon-left uimini">Apply</a>
             </div>
         </div>
     </div>
-
     <div data-role="page" id="page2">
-
         <div data-role="header">
             <h1>APPLICATION FORM</h1>
         </div>
-
         <form onsubmit="return onsubmitform();">
             <div data-role="main" class="ui-content">
                 <label for="text-basic">Name</label>
                 <input type="text" name="text-basic" id="text-basic" placeholder="Full Name" value="">
-
                 <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
                     <legend>Gender</legend>
                     <input type="radio" name="radio-choice-b" id="radio-choice-c" value="list">
@@ -60,17 +50,14 @@
                     <input type="radio" name="radio-choice-b" id="radio-choice-d" value="grid">
                     <label for="radio-choice-d">Female</label>
                 </fieldset>
-
                 <label for="slider-fill">Working Experience (years)</label>
                 <input type="range" name="slider-fill" id="slider-fill" value="" min="0" max="30" step="1"
                     data-highlight="true">
-
                 <label for="slider-flip-m">Willing to work outside</label>
                 <select name="slider-flip-m" id="slider-flip-m" data-role="slider" data-mini="true">
                     <option id="yes" value="Yes">Yes</option>
                     <option id="no" value="No">No</option>
                 </select>
-
                 <fieldset data-role="controlgroup">
                     <legend>Programming Language</legend>
                     <input type="checkbox" name="checkbox-1a" id="checkbox-1a">
@@ -82,14 +69,12 @@
                     <input type="checkbox" name="checkbox-4a" id="checkbox-4a">
                     <label for="checkbox-4a">Java</label>
                 </fieldset>
-
                 <fieldset data-role="controlgroup" data-type="horizontal">
                     <input type="submit" name="Submit" value="Send">
                     <input type="reset" value="Reset">
                 </fieldset>
         </form>
     </div>
-
     <div data-role="footer">
     </div>
     </div>
